@@ -1,7 +1,7 @@
 
 s=str(input("Enter Input String : "))
 OP=' '
-IP='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+IP='0123456789'
 a=a+1;
 length=len(s);
 lenab=len(IP);
@@ -10,7 +10,7 @@ for i in range(0,length):
        OP=OP+s[i];
 for j in range(0,lenab):
      for k in range(0, length):
-        if(IP[j]==s[k]):
+        if(IP[j]!=s[k]):
            a=a+1;
 for b in range(0,length-3):
        if(OP[b]==OP[b+1]):
